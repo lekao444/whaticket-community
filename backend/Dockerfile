@@ -16,6 +16,8 @@ RUN yarn global add typescript
 # Copiar o restante do código
 COPY . .
 
+RUN yarn add -D @types/pino-std-serializers
+
 # Build do projeto
 RUN yarn build
 
