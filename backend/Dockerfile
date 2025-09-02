@@ -16,6 +16,9 @@ RUN yarn global add typescript
 # Copiar o restante do código
 COPY . .
 
+# Instalar tipagens corretas para Express
+RUN yarn add -D @types/express@4.17.21 @types/express-serve-static-core@4.17.33
+
 RUN yarn add -D @types/pino-std-serializers
 
 # Build do projeto
