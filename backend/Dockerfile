@@ -5,7 +5,7 @@ FROM node:18-bullseye
 WORKDIR /app
 
 # Copiar package.json e yarn.lock primeiro
-COPY package.json yarn.lock ./
+# COPY package.json yarn.lock ./ 
 
 # Instalar dependências
 RUN yarn install --frozen-lockfile
